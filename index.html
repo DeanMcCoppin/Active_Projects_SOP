@@ -47,7 +47,8 @@
         /* Flip card styles */
         .flip-card {
             position: absolute;
-            top: 8px;
+            top: 50%;
+            transform: translateY(-50%);
             right: 20px;
             width: 140px;
             height: 50px;
@@ -148,13 +149,13 @@
 
         .tab:hover {
             background: #2a2a2a;
-            color: #667eea;
+            color: white;
         }
 
         .tab.active {
             background: #000;
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
+            color: white;
+            border-bottom: 3px solid white;
         }
 
         .content {
@@ -196,8 +197,8 @@
             background: #000;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-            border: 2px solid #667eea;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+            border: 2px solid white;
         }
 
         .video-container video {
@@ -211,15 +212,15 @@
         .video-info {
             flex: 1;
             padding: 20px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
             border-radius: 10px;
-            border: 2px solid #667eea;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            border: 2px solid white;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
             align-self: stretch;
         }
 
         .video-info h3 {
-            color: #667eea;
+            color: white;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
